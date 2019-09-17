@@ -3,3 +3,31 @@
 
 Now enhance the output by adding a space to separate all the nibbles. This is how a calculator typically shows binary output. 128 would now look like this '1000 0000', and a number like 60 would look like this '11 1100'
 """
+
+from collections import deque
+
+def int_to_binary(num):
+
+    remainder_stack = deque()
+
+    if num == 0:
+        return '0'
+
+    
+    while num > 0:
+        remainder = num % 2
+        remainder_stack.appendleft(remainder)
+        num = num // 2
+
+    binary_num = ''
+    while remainder_stack:
+        binary_num += str(remainder_stack.popleft())
+
+    return binary_num
+
+
+# get the algorithm
+# return that integer as a string
+# then worry about spaces
+
+
