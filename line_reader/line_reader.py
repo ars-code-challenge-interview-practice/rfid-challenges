@@ -9,3 +9,25 @@ o    There can be any text content between these 2 elements, or no content betwe
 
 o    For all lines that match the specification above, print out the line number and the line content.
 """
+
+# example file from here: https://www.ibm.com/support/knowledgecenter/SSLTBW_2.2.0/com.ibm.zos.v2r2.hald001/exmlogfile.htm
+
+# look up how to read through files in python
+
+# Check for WARNING<int> - should start with WARNING
+    #  print line #, print line content
+    #  separate on spacw
+
+# line ends with " ***"
+    #  print line #, print line content
+    #  separate on spacw
+
+def read_stuff():
+    file = open("sample_log.txt", "r")
+
+    if file.mode == "r":
+        contents = file.read()
+        print(contents)
+
+if __name__ == "__main__":
+    read_stuff()
