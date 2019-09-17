@@ -25,9 +25,11 @@ o    For all lines that match the specification above, print out the line number
 def read_stuff():
     file = open("sample_log.txt", "r")
 
-    if file.mode == "r":
-        contents = file.read()
-        print(contents)
+    file_lines = file.readlines()
+
+    for line in file_lines:
+        if "WARNING" in line:
+            print(line)
 
 if __name__ == "__main__":
     read_stuff()
