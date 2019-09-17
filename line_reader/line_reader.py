@@ -30,6 +30,8 @@ def read_stuff():
     for line in file_lines:
         if "WARNING" in line:
             print(line)
+        if " ***" in line:
+            print(line)
 
 if __name__ == "__main__":
     read_stuff()
