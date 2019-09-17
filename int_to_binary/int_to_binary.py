@@ -10,7 +10,10 @@ def int_to_binary(num):
 
     remainder_stack = deque()
 
-    # breakpoint()
+    if num == 0:
+        return '0'
+
+    
     while num > 0:
         remainder = num % 2
         remainder_stack.appendleft(remainder)
