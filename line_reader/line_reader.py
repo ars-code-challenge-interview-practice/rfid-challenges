@@ -27,10 +27,13 @@ def read_stuff():
 
     file_lines = file.readlines()
 
+    warn = "WARNING"
+    asterix = " ***\n"
+
     for line in file_lines:
-        if "WARNING" in line:
+        if warn in line:
             print(line)
-        if " ***" in line:
+        if asterix in line:
             print(line)
 
 if __name__ == "__main__":
