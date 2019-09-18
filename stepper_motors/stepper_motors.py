@@ -21,3 +21,21 @@ The goal here isn't to implement a working solution, you can 'stub' out the call
 
 One last thing. Implement a check that raises an exception anytime a command is called before connect has been called.
 """
+
+# Full disclosure - I'm having trouble visualizing about how to even start this challenge. I'm very unfamiliar with SSH and sockets. As I understand it, SSH mainly happens in the terminal. Since I'm entirely unfamiliar with what goes into the motor protocols, I'm not sure what to have the code look for and handle. I have my understanding of what each method should do is below.
+
+def connect(ip, pwd, uname):
+    # it should verify that the username and password match, and are authorized to be on the ip address. After it finishes with that, it needs to communicate with the socket.  After that, I'm not sure what it needs to do, or the steps it will need to take to finish connecting.
+    pass
+
+def disconnect():
+    # checks for connection. Will have to tell the socket to disconnect. It probably involves telling the motors to stop communicating with the socket. Unsure how this will be accomplished.
+    pass
+
+def accelerate_to_speed(int):
+    # checks for connection. Takes in the integer over over text command. Assuming the motors have some way to handle speed, it should replace the speed for those motors with the integer.
+    pass
+
+def stop():
+    # checks for connection.  Sets accelerate_to_speed to 0. Takes in motor protocols as variables.
+    pass

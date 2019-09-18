@@ -27,11 +27,6 @@ def test_two_digits():
 def test_zero():
     assert int_to_binary(0) == '0'
 
-def test_negatives():
-    assert int_to_binary(-1) == '-1'
-    assert int_to_binary(-500) == '-111110100'
-    assert int_to_binary(-25) == '-11001'
-    assert int_to_binary(-1000) == '1111101000'
 
 
 

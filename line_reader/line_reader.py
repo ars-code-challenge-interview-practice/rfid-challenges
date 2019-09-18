@@ -11,6 +11,7 @@ o    For all lines that match the specification above, print out the line number
 """
 
 # example file from here: https://www.ibm.com/support/knowledgecenter/SSLTBW_2.2.0/com.ibm.zos.v2r2.hald001/exmlogfile.htm
+# This isn't grabbing every line it should, and I'm unsure how to grab the line number. I'm not sure why. 
 
 import re
 
